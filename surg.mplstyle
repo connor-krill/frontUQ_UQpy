@@ -1,0 +1,36 @@
+# Define custom matplotlib styles for SURG Coursera project. March 2024
+# This style sheet is designed to be composed with `ggplot` as seen in the link below
+# https://matplotlib.org/stable/users/explain/customizing.html#composing-styles
+# Example usage:
+# import matplotlib.pyplot as plt
+# plt.style.use(['ggplot', './surg/mplstyle'])
+
+# For a full list of configurable rcParams, see
+# https://matplotlib.org/stable/api/matplotlib_configuration_api.html#matplotlib.rcParams
+
+# Begin customization
+# These are the same default colors as ggplot, but with blue first
+axes.prop_cycle: cycler('color', ['348ABD', 'E24A33', '988ED5', '777777', 'FBC15E', '8EBA42', 'FFB5B8'])
+# 348ABD : blue
+# E24A33 : red
+# 988ED5 : purple
+# 777777 : gray
+# FBC15E : yellow
+# 8EBA42 : green
+# FFB5B8 : pink
+axes.spines.left: True  # display axis spines
+axes.spines.bottom: True
+axes.spines.top: True
+axes.spines.right: True
+axes.titlelocation: left
+axes.titlesize: 12.0
+
+font.family: Helvetica
+font.size: 12.0
+
+text.usetex: True
+
+xtick.labelsize: small
+ytick.labelsize: small
+
+savefig.dpi: 300

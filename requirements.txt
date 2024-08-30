@@ -1,0 +1,8 @@
+umbridge
+numpy
+matplotlib
+seaborn
+scipy
+torch
+torchinfo
+pandas
