@@ -18,6 +18,7 @@ def aerodynamic_model(x: np.ndarray) -> list:
 
 
 if __name__ == "__main__":
+    print("Running UM-Bridge and UQpy models...")
     inputs = [[0.0, 500_000, 0.3, 0.7, 0.0]]
 
     umbridge_model = umbridge.HTTPModel(
@@ -27,9 +28,9 @@ if __name__ == "__main__":
 
     uqpy_model = uq.RunModel(
         uq.PythonModel(
-            model_script="quickstart.py", model_object_name="aerodynamic_model"
+            model_script="validate_setup.py", model_object_name="aerodynamic_model"
         )
     )
     uqpy_model.run(samples=inputs)
     print("UQpy:".ljust(10), uqpy_model.qoi_list[0])
-
+    print("done!")

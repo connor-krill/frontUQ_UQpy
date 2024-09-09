@@ -6,4 +6,4 @@ scipy
 torch
 torchinfo
 pandas
-UQpy
+UQpy==4.0.5
