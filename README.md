@@ -1,9 +1,20 @@
 # UQpy at FrontUQ 2024
 
-This repository is for the demonstration of UQpy Scientific Machine Learning at the 
+This repository is for the demonstration of [UQpy](https://uqpyproject.readthedocs.io/en/latest/) at the 
 [FrontUQ 2024](https://www.frontuq-2024.com) conference.
 
-## Aerospace Model Definition
+## Setup
+
+This repository is written entirely in Python.
+We recommend you set up a new Python environment and
+install the packages in `requirements.txt`, then run `validate_setup.py`
+to confirm [UM-Bridge](https://um-bridge-benchmarks.readthedocs.io/en/docs/) 
+and [UQpy](https://uqpyproject.readthedocs.io/en/latest/) are properly installed.
+The script `validate_setup.py` runs the XFoil model twice, once with UM-Bridge and once with UQpy, and prints the results.
+
+For simplicity, `validate_setup.py`
+
+## XFoil Aerospace Model
 
 The model is provided for us and computed using the package [xfoil](https://web.mit.edu/drela/Public/web/xfoil/).
 The details of xfoil are not important to us, we treat this model as a black box.
@@ -60,3 +71,9 @@ you can specify the maximum number of parallel model runs you'd like the server 
 Since each xfoil instance itself is still sequential, that should usually equal the number of CPU cores.
 With a parallelized UQ software, the server will now actually handle parallel UM-Bridge requests in parallel.
 
+# Authors
+
+Shields Uncertainty Research Group    
+Department of Civil and Systems Engineering  
+Johns Hopkins University  
+Baltimore, Maryland  

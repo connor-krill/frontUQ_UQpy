@@ -21,7 +21,7 @@ if __name__ == "__main__":
     inputs = [[0.0, 500_000, 0.3, 0.7, 0.0]]
 
     umbridge_model = umbridge.HTTPModel(
-        "  https://xfoil.linusseelinger.de:443", "forward"
+        "https://xfoil.linusseelinger.de:443", "forward"
     )
     print("UM Bridge:", umbridge_model(inputs))
 

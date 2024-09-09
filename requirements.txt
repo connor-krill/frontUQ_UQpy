@@ -6,3 +6,4 @@ scipy
 torch
 torchinfo
 pandas
+UQpy
